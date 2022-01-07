@@ -1,3 +1,5 @@
+# __all__ = ['fn1', 'fn2']
+
 def fn1(arg1, arg2):
     """
     Test function 1

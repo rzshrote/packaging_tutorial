@@ -1,9 +1,7 @@
 expkg.ExampleClass
 ==================
 
-.. currentmodule:: expkg
-
-.. autoclass:: ExampleClass
+.. automodule:: expkg.ExampleClass
 
    
    
@@ -11,9 +9,24 @@ expkg.ExampleClass
 
    
    
-      .. autosummary::
-         :toctree:
-      
-         ExampleClass.m1
+   
+
    
    
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      ExampleClass
+   
+   
+
+   
+   
+   
+
+
+

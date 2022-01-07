@@ -1,9 +1,7 @@
 expkg.submodule.ExampleClassInSubmodule
 =======================================
 
-.. currentmodule:: expkg.submodule
-
-.. autoclass:: ExampleClassInSubmodule
+.. automodule:: expkg.submodule.ExampleClassInSubmodule
 
    
    
@@ -11,9 +9,24 @@ expkg.submodule.ExampleClassInSubmodule
 
    
    
-      .. autosummary::
-         :toctree:
-      
-         ExampleClassInSubmodule.m2
+   
+
    
    
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      ExampleClassInSubmodule
+   
+   
+
+   
+   
+   
+
+
+

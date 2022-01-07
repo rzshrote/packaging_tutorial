@@ -12,6 +12,8 @@ expkg.example\_functions
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
+      :nosignatures:
    
       fn1
       fn2

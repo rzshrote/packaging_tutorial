@@ -6,11 +6,14 @@
 Welcome to expkg's documentation!
 =================================
 
+This is a test package build.
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
-   api
+   Homepage <self>
+   API reference <_autosummary/expkg>
 
 
 Indices and tables

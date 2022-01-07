@@ -1,3 +1,5 @@
+# __all__ = ['ExampleClassInSubmodule']
+
 class ExampleClassInSubmodule:
     """docstring for ExampleClassInSubmodule."""
 

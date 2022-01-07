@@ -32,14 +32,21 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.napoleon',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
+    'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
+    'sphinx_autodoc_typehints', # Automatically document param types (less noise in class signature)
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
+
+# The suffix of source filenames.
+source_suffix = '.rst'
+
+# Will change to `root_doc` in Sphinx 4
+master_doc = 'index'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -48,10 +55,25 @@ exclude_patterns = []
 
 # -- Options for sphinx.ext.autosummary --------------------------------------
 autosummary_generate = True
-autosummary_imported_members = True
+# autosummary_imported_members = True
+autoclass_content = "both"  # Add __init__ doc (ie. params) to class summaries
+
+autosummary_generate = True  # Turn on sphinx.ext.autosummary
+autoclass_content = "both"  # Add __init__ doc (ie. params) to class summaries
+html_show_sourcelink = False  # Remove 'view source code' from top of page (for html, not python)
+autodoc_inherit_docstrings = True  # If no docstring, inherit from base class
+set_type_checking_flag = True  # Enable 'expensive' imports for sphinx_autodoc_typehints
+nbsphinx_allow_errors = True  # Continue through Jupyter errors
+#autodoc_typehints = "description" # Sphinx-native method. Not as good as sphinx_autodoc_typehints
+add_module_names = False # Remove namespaces from class/method signatures
 
 # -- Options for sphinx.ext.napoleon -----------------------------------------
-napoleon_numpy_docstring = True
+# napoleon_numpy_docstring = True
+
+# -- Options for sphinx.ext.viewcode -----------------------------------------
+
+# -- Options for autoapi.extension -------------------------------------------
+# autoapi_dirs = ['../../src']
 
 # -- Options for HTML output -------------------------------------------------
 

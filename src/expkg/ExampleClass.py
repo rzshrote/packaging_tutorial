@@ -1,3 +1,5 @@
+# __all__ = ['ExampleClass']
+
 class ExampleClass:
     """docstring for ExampleClass."""
 

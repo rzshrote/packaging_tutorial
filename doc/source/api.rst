@@ -1,10 +1,8 @@
-API
-===
-
-.. rubric:: Modules
+:orphan:
 
 .. autosummary::
-    :toctree: _autosummary
-    :recursive:
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
 
-    expkg
+   expkg

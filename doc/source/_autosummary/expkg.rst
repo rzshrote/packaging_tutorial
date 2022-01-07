@@ -9,34 +9,21 @@
 
    
    
-   .. rubric:: Functions
-
-   .. autosummary::
-   
-      fn1
-      fn2
-   
-   
-
-   
-   
-   .. rubric:: Classes
-
-   .. autosummary::
-   
-      ExampleClass
-   
    
 
    
    
    
 
+   
+   
+   
 
 
 
 .. autosummary::
    :toctree:
+   :template: custom-module-template.rst
    :recursive:
 
    expkg.ExampleClass
