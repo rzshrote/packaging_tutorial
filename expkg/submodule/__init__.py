@@ -1,3 +1,6 @@
+"""
+Example submodule
+"""
 # from . import ExampleClassInSubmodule
 #
 # __all__ = []

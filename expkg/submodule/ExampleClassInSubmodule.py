@@ -1,3 +1,6 @@
+"""
+Module containing the ExampleClassInSubmodule class.
+"""
 # __all__ = ['ExampleClassInSubmodule']
 
 class ExampleClassInSubmodule:

@@ -1,3 +1,6 @@
+"""
+Module containing the InheritingClass class.
+"""
 from .ExampleClassInSubmodule import ExampleClassInSubmodule
 
 class InheritingClass(ExampleClassInSubmodule):

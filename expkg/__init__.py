@@ -1,3 +1,6 @@
+"""
+expkg root module
+"""
 # # import individual files as modules
 # from . import example_functions
 # from . import ExampleClass
@@ -14,3 +17,6 @@
 # from each file import __all__
 # from .example_functions import *
 # from .ExampleClass import *
+from . import example_functions
+from . import ExampleClass
+from . import submodule

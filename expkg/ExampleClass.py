@@ -1,3 +1,6 @@
+"""
+Module containing the ExampleClass class.
+"""
 # __all__ = ['ExampleClass']
 
 class ExampleClass:

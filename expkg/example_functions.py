@@ -1,3 +1,6 @@
+"""
+Module containing example functions
+"""
 # __all__ = ['fn1', 'fn2']
 
 def fn1(arg1, arg2):
