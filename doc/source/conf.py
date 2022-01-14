@@ -34,6 +34,8 @@ release = '0.0.1'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
+    'sphinx.ext.duration',      # Get build times
+    'sphinx.ext.githubpages',   # Add .noj
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'sphinx_autodoc_typehints', # Automatically document param types (less noise in class signature)
@@ -68,7 +70,7 @@ nbsphinx_allow_errors = True  # Continue through Jupyter errors
 add_module_names = False # Remove namespaces from class/method signatures
 
 # -- Options for sphinx.ext.napoleon -----------------------------------------
-# napoleon_numpy_docstring = True
+napoleon_numpy_docstring = True
 
 # -- Options for sphinx.ext.viewcode -----------------------------------------
 
@@ -80,7 +82,8 @@ add_module_names = False # Remove namespaces from class/method signatures
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+# html_theme = 'alabaster'
+html_theme = "pydata_sphinx_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
